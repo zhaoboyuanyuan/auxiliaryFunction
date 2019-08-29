@@ -1,0 +1,801 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils" xmlns:lxslt="http://xml.apache.org/xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>zhaoyongjian AppTestReport</title>
+<style type="text/css">
+
+                    body {
+
+                    font:normal 68% verdana,arial,helvetica;
+
+                    color:#000000;
+
+                    }
+
+                    table tr td, table tr th {
+
+                    font-size: 68%;
+
+                    }
+
+                    table.details tr th{
+
+                    font-weight: bold;
+
+                    text-align:left;
+
+                    background:#a6caf0;
+
+                    }
+
+                    table.details tr td{
+
+                    background:#eeeee0;
+
+                    }
+
+
+
+                    p {
+
+                    line-height:1.5em;
+
+                    margin-top:0.5em; margin-bottom:1.0em;
+
+                    }
+
+                    h1 {
+
+                    margin: 0px 0px 5px; font: 165% verdana,arial,helvetica
+
+                    }
+
+                    h2 {
+
+                    margin-top: 1em; margin-bottom: 0.5em; font: bold 125%verdana,arial,helvetica
+
+                    }
+
+                    h3 {
+
+                    margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica
+
+                    }
+
+                    h4 {
+
+                    margin-bottom: 0.5em; font: bold 100% verdana,arial,helvetica
+
+                    }
+
+                    h5 {
+
+                    margin-bottom: 0.5em; font: bold 100% verdana,arial,helvetica
+
+                    }
+
+                    h6 {
+
+                    margin-bottom: 0.5em; font: bold 100% verdana,arial,helvetica
+
+                    }
+
+                    .Error {
+
+                    font-weight:bold; color:red;
+
+                    }
+
+                    .Failure {
+
+                    font-weight:bold; color:purple;
+
+                    }
+
+                    .Properties {
+
+                    text-align:right;
+
+                    }
+
+                </style>
+<script language="JavaScript" type="text/javascript">
+
+                    var TestCases = new Array();
+
+                    var cur;
+
+                    </script><script language="JavaScript" type="text/javascript">
+
+       function displayProperties (name) {
+
+         var win =window.open('','JUnitSystemProperties','scrollbars=1,resizable=1');
+
+         var doc = win.document;
+
+         doc.open();
+
+         doc.write("<html><head><title>Properties of" + name + "</title>");
+
+         doc.write("<style>")
+
+         doc.write("body {font:normal 68% verdana,arial,helvetica;color:#000000; }");
+
+         doc.write("table tr td, table tr th { font-size: 68%; }");
+
+         doc.write("table.properties { border-collapse:collapse;border-left:solid 1 #cccccc; border-top:solid 1 #cccccc; padding:5px; }");
+
+         doc.write("table.properties th { text-align:left;border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc;background-color:#eeeeee; }");
+
+         doc.write("table.properties td { font:normal; text-align:left;border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc;background-color:#fffffff; }");
+
+         doc.write("h3 { margin-bottom: 0.5em; font: bold 115%verdana,arial,helvetica }");
+
+         doc.write("</style>");
+
+         doc.write("</head><body>");
+
+         doc.write("<h3>Properties of" + name + "</h3>");
+
+         doc.write("<div align=\"right\"><ahref=\"javascript:window.close();\">Close</a></div>");
+
+         doc.write("<table class='properties'>");
+
+         doc.write("<tr><th>Name</th><th>Value</th></tr>");
+
+         for (prop in TestCases[name]) {
+
+           doc.write("<tr><th>" + prop +"</th><td>" + TestCases[name][prop] +"</td></tr>");
+
+         }
+
+         doc.write("</table>");
+
+         doc.write("</body></html>");
+
+         doc.close();
+
+         win.focus();
+
+       }
+
+     
+
+                </script>
+</head>
+<body>
+<center>
+<h2>Android 智能家居测试报告</h2>
+</center>
+<h2>Summary</h2>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details">
+<tr valign="top">
+<th>Tests</th><th>Failures</th><th>Errors</th><th>Successrate</th><th>Time(s)</th>
+</tr>
+<tr valign="top" class="">
+<td>200</td><td>0</td><td>0</td><td>100.00%</td><td>12444.237</td>
+</tr>
+</table>
+<table width="95%" border="0">
+<tr>
+<td style="text-align: justify;">
+            Note:
+            <i>failures</i> are anticipated and checked for withassertions while
+            <i>errors</i> are unanticipated.
+
+        </td>
+</tr>
+</table>
+<hr align="left" width="95%" size="1">
+<h2>The Detail of Tests</h2>
+<a name=""></a>
+<h3>TestCase </h3>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details">
+<tr valign="top">
+<th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="">
+<td>testACreateTimeTask_09</td><td>Success</td><td></td><td>31.960</td>
+</tr>
+<tr valign="top" class="">
+<td>testACreateTimeTask_10</td><td>Success</td><td></td><td>30.179</td>
+</tr>
+<tr valign="top" class="">
+<td>testACreateTimeTask_11</td><td>Success</td><td></td><td>30.814</td>
+</tr>
+<tr valign="top" class="">
+<td>testACreateTimeTask_12</td><td>Success</td><td></td><td>30.625</td>
+</tr>
+<tr valign="top" class="">
+<td>testACreateTimeTask_13</td><td>Success</td><td></td><td>31.404</td>
+</tr>
+<tr valign="top" class="">
+<td>testACreateTimingTask_01</td><td>Success</td><td></td><td>30.566</td>
+</tr>
+<tr valign="top" class="">
+<td>testACreateTimingTask_02</td><td>Success</td><td></td><td>30.963</td>
+</tr>
+<tr valign="top" class="">
+<td>testACreateTimingTask_03</td><td>Success</td><td></td><td>30.892</td>
+</tr>
+<tr valign="top" class="">
+<td>testACreateTimingTask_04</td><td>Success</td><td></td><td>30.958</td>
+</tr>
+<tr valign="top" class="">
+<td>testACreateTimingTask_05</td><td>Success</td><td></td><td>31.534</td>
+</tr>
+<tr valign="top" class="">
+<td>testACreateTimingTask_06</td><td>Success</td><td></td><td>31.535</td>
+</tr>
+<tr valign="top" class="">
+<td>testACreateTimingTask_07</td><td>Success</td><td></td><td>31.306</td>
+</tr>
+<tr valign="top" class="">
+<td>testACreateTimingTask_08</td><td>Success</td><td></td><td>30.280</td>
+</tr>
+<tr valign="top" class="">
+<td>testBCreateSceneTask_01</td><td>Success</td><td></td><td>31.281</td>
+</tr>
+<tr valign="top" class="">
+<td>testBCreateSceneTask_02</td><td>Success</td><td></td><td>31.700</td>
+</tr>
+<tr valign="top" class="">
+<td>testBCreateSceneTask_03</td><td>Success</td><td></td><td>30.163</td>
+</tr>
+<tr valign="top" class="">
+<td>testBCreateSceneTask_04</td><td>Success</td><td></td><td>31.170</td>
+</tr>
+<tr valign="top" class="">
+<td>testBCreateSceneTask_05</td><td>Success</td><td></td><td>29.071</td>
+</tr>
+<tr valign="top" class="">
+<td>testBCreateSceneTask_06</td><td>Success</td><td></td><td>31.611</td>
+</tr>
+<tr valign="top" class="">
+<td>testBCreateSceneTask_07</td><td>Success</td><td></td><td>29.050</td>
+</tr>
+<tr valign="top" class="">
+<td>testBCreateSceneTask_08</td><td>Success</td><td></td><td>29.190</td>
+</tr>
+<tr valign="top" class="">
+<td>testBCreateSceneTask_09</td><td>Success</td><td></td><td>29.446</td>
+</tr>
+<tr valign="top" class="">
+<td>testBCreateSceneTask_10</td><td>Success</td><td></td><td>29.544</td>
+</tr>
+<tr valign="top" class="">
+<td>testBCreateSceneTask_11</td><td>Success</td><td></td><td>29.486</td>
+</tr>
+<tr valign="top" class="">
+<td>testBCreateSceneTask_12</td><td>Success</td><td></td><td>28.474</td>
+</tr>
+<tr valign="top" class="">
+<td>testBCreateSceneTask_13</td><td>Success</td><td></td><td>29.373</td>
+</tr>
+<tr valign="top" class="">
+<td>testBCreateSceneTask_14</td><td>Success</td><td></td><td>29.460</td>
+</tr>
+<tr valign="top" class="">
+<td>testBCreateSceneTask_15</td><td>Success</td><td></td><td>31.944</td>
+</tr>
+<tr valign="top" class="">
+<td>testBCreateSceneTask_16</td><td>Success</td><td></td><td>29.387</td>
+</tr>
+<tr valign="top" class="">
+<td>testBCreateSceneTask_17</td><td>Success</td><td></td><td>29.669</td>
+</tr>
+<tr valign="top" class="">
+<td>testBCreateSceneTask_18</td><td>Success</td><td></td><td>29.653</td>
+</tr>
+<tr valign="top" class="">
+<td>testBCreateSceneTask_19</td><td>Success</td><td></td><td>30.022</td>
+</tr>
+<tr valign="top" class="">
+<td>testBCreateSceneTask_20</td><td>Success</td><td></td><td>29.808</td>
+</tr>
+<tr valign="top" class="">
+<td>testCreateSceneTask_21</td><td>Success</td><td></td><td>29.770</td>
+</tr>
+<tr valign="top" class="">
+<td>testCreateSceneTask_22</td><td>Success</td><td></td><td>29.989</td>
+</tr>
+<tr valign="top" class="">
+<td>testCreateSceneTask_23</td><td>Success</td><td></td><td>30.314</td>
+</tr>
+<tr valign="top" class="">
+<td>testCreateSceneTask_24</td><td>Success</td><td></td><td>30.247</td>
+</tr>
+<tr valign="top" class="">
+<td>testCreateSceneTask_25</td><td>Success</td><td></td><td>30.395</td>
+</tr>
+<tr valign="top" class="">
+<td>testCreateSceneTask_26</td><td>Success</td><td></td><td>30.319</td>
+</tr>
+<tr valign="top" class="">
+<td>testCreateSceneTask_27</td><td>Success</td><td></td><td>30.303</td>
+</tr>
+<tr valign="top" class="">
+<td>testCreateSceneTask_28</td><td>Success</td><td></td><td>29.845</td>
+</tr>
+<tr valign="top" class="">
+<td>testCreateSceneTask_29</td><td>Success</td><td></td><td>30.589</td>
+</tr>
+<tr valign="top" class="">
+<td>testCreateSceneTask_30</td><td>Success</td><td></td><td>29.842</td>
+</tr>
+<tr valign="top" class="">
+<td>testDCreateSceneTask_31</td><td>Success</td><td></td><td>30.804</td>
+</tr>
+<tr valign="top" class="">
+<td>testDCreateSceneTask_32</td><td>Success</td><td></td><td>30.701</td>
+</tr>
+<tr valign="top" class="">
+<td>testDCreateSceneTask_33</td><td>Success</td><td></td><td>30.792</td>
+</tr>
+<tr valign="top" class="">
+<td>testDCreateSceneTask_34</td><td>Success</td><td></td><td>31.068</td>
+</tr>
+<tr valign="top" class="">
+<td>testDCreateSceneTask_35</td><td>Success</td><td></td><td>31.042</td>
+</tr>
+<tr valign="top" class="">
+<td>testDCreateSceneTask_36</td><td>Success</td><td></td><td>31.087</td>
+</tr>
+<tr valign="top" class="">
+<td>testDCreateSceneTask_37</td><td>Success</td><td></td><td>31.095</td>
+</tr>
+<tr valign="top" class="">
+<td>testDCreateSceneTask_38</td><td>Success</td><td></td><td>31.195</td>
+</tr>
+<tr valign="top" class="">
+<td>testDCreateSceneTask_39</td><td>Success</td><td></td><td>31.372</td>
+</tr>
+<tr valign="top" class="">
+<td>testDCreateSceneTask_40</td><td>Success</td><td></td><td>31.620</td>
+</tr>
+<tr valign="top" class="">
+<td>testDCreateSceneTask_41</td><td>Success</td><td></td><td>31.629</td>
+</tr>
+<tr valign="top" class="">
+<td>testDCreateSceneTask_42</td><td>Success</td><td></td><td>31.359</td>
+</tr>
+<tr valign="top" class="">
+<td>testViewAboutUs</td><td>Success</td><td></td><td>39.621</td>
+</tr>
+<tr valign="top" class="">
+<td>testViewIntroduction</td><td>Success</td><td></td><td>47.013</td>
+</tr>
+<tr valign="top" class="">
+<td>testBIntoGatewayList</td><td>Success</td><td></td><td>35.474</td>
+</tr>
+<tr valign="top" class="">
+<td>testBindGatewayASEmptyNum</td><td>Success</td><td></td><td>44.245</td>
+</tr>
+<tr valign="top" class="">
+<td>testBindGatewayAsEmptyPassword</td><td>Success</td><td></td><td>43.948</td>
+</tr>
+<tr valign="top" class="">
+<td>testBindGatewayAsPasswordLessThanSix</td><td>Success</td><td></td><td>44.237</td>
+</tr>
+<tr valign="top" class="">
+<td>testBindGatewayAsWrongPassword</td><td>Success</td><td></td><td>47.031</td>
+</tr>
+<tr valign="top" class="">
+<td>testCBindGatewaySuccess</td><td>Success</td><td></td><td>48.185</td>
+</tr>
+<tr valign="top" class="">
+<td>testChangePassword</td><td>Success</td><td></td><td>46.710</td>
+</tr>
+<tr valign="top" class="">
+<td>testChangePasswordAsNewEmpty</td><td>Success</td><td></td><td>44.414</td>
+</tr>
+<tr valign="top" class="">
+<td>testChangePasswordAsNewLessThan6</td><td>Success</td><td></td><td>49.292</td>
+</tr>
+<tr valign="top" class="">
+<td>testChangePasswordAsOldWrong</td><td>Success</td><td></td><td>48.603</td>
+</tr>
+<tr valign="top" class="">
+<td>testViewFunction</td><td>Success</td><td></td><td>50.023</td>
+</tr>
+<tr valign="top" class="">
+<td>testViewYboutUs</td><td>Success</td><td></td><td>42.442</td>
+</tr>
+<tr valign="top" class="">
+<td>testCreateSceneAsName10</td><td>Success</td><td></td><td>69.263</td>
+</tr>
+<tr valign="top" class="">
+<td>testCreateSceneAsName20</td><td>Success</td><td></td><td>68.958</td>
+</tr>
+<tr valign="top" class="">
+<td>testCreateSceneAsNameRepeat</td><td>Success</td><td></td><td>46.387</td>
+</tr>
+<tr valign="top" class="">
+<td>testCreateSceneAsNoneIcon</td><td>Success</td><td></td><td>43.088</td>
+</tr>
+<tr valign="top" class="">
+<td>testCreateSceneAsNoneName</td><td>Success</td><td></td><td>46.732</td>
+</tr>
+<tr valign="top" class="">
+<td>testACreateAsMoreThan15</td><td>Success</td><td></td><td>62.401</td>
+</tr>
+<tr valign="top" class="">
+<td>testAEditAsCancel</td><td>Success</td><td></td><td>65.659</td>
+</tr>
+<tr valign="top" class="">
+<td>testAEditAsEquals15</td><td>Success</td><td></td><td>78.001</td>
+</tr>
+<tr valign="top" class="">
+<td>testAEditAsEquals2</td><td>Success</td><td></td><td>77.685</td>
+</tr>
+<tr valign="top" class="">
+<td>testBDeleteAsCancel</td><td>Success</td><td></td><td>66.379</td>
+</tr>
+<tr valign="top" class="">
+<td>testBDeleteAsConfirm</td><td>Success</td><td></td><td>72.094</td>
+</tr>
+<tr valign="top" class="">
+<td>testCreateAsCancel</td><td>Success</td><td></td><td>53.255</td>
+</tr>
+<tr valign="top" class="">
+<td>testCreateAsLessThan15</td><td>Success</td><td></td><td>48.465</td>
+</tr>
+<tr valign="top" class="">
+<td>testCreateAsNameEmpty</td><td>Success</td><td></td><td>39.636</td>
+</tr>
+<tr valign="top" class="">
+<td>testUpdateAsCancel</td><td>Success</td><td></td><td>65.736</td>
+</tr>
+<tr valign="top" class="">
+<td>testUpdateAsConf</td><td>Success</td><td></td><td>78.329</td>
+</tr>
+<tr valign="top" class="">
+<td>testMatchMorePartition</td><td>Success</td><td></td><td>44.369</td>
+</tr>
+<tr valign="top" class="">
+<td>testMatchPartition</td><td>Success</td><td></td><td>42.860</td>
+</tr>
+<tr valign="top" class="">
+<td>testRenameAsCancel</td><td>Success</td><td></td><td>64.080</td>
+</tr>
+<tr valign="top" class="">
+<td>testRenameAsChildDevice</td><td>Success</td><td></td><td>62.212</td>
+</tr>
+<tr valign="top" class="">
+<td>testRenameAsConfirm</td><td>Success</td><td></td><td>60.058</td>
+</tr>
+<tr valign="top" class="">
+<td>testRenameAsEquals19</td><td>Success</td><td></td><td>64.773</td>
+</tr>
+<tr valign="top" class="">
+<td>testRenameAsEquals20</td><td>Success</td><td></td><td>64.780</td>
+</tr>
+<tr valign="top" class="">
+<td>testRenameAsMoreThan20</td><td>Success</td><td></td><td>65.442</td>
+</tr>
+<tr valign="top" class="">
+<td>testSetPartition</td><td>Success</td><td></td><td>45.552</td>
+</tr>
+<tr valign="top" class="">
+<td>testMatchAllType</td><td>Success</td><td></td><td>65.662</td>
+</tr>
+<tr valign="top" class="">
+<td>testAEditSceneAsTime1</td><td>Success</td><td></td><td>170.782</td>
+</tr>
+<tr valign="top" class="">
+<td>testAEditSceneAsTime1Back</td><td>Success</td><td></td><td>224.139</td>
+</tr>
+<tr valign="top" class="">
+<td>testAEditSceneAsTime1Cancel</td><td>Success</td><td></td><td>213.549</td>
+</tr>
+<tr valign="top" class="">
+<td>testAEditSceneAsTime1SaveAndBack</td><td>Success</td><td></td><td>235.845</td>
+</tr>
+<tr valign="top" class="">
+<td>testAEditSceneAsTime99</td><td>Success</td><td></td><td>163.177</td>
+</tr>
+<tr valign="top" class="">
+<td>testAEditSceneAsTime99Back</td><td>Success</td><td></td><td>185.812</td>
+</tr>
+<tr valign="top" class="">
+<td>testAEditSceneAsTime99Cancel</td><td>Success</td><td></td><td>180.842</td>
+</tr>
+<tr valign="top" class="">
+<td>testAEditSceneAsTime99SaveAndBack</td><td>Success</td><td></td><td>207.304</td>
+</tr>
+<tr valign="top" class="">
+<td>testDeleteSceneCancel</td><td>Success</td><td></td><td>201.744</td>
+</tr>
+<tr valign="top" class="">
+<td>testDeleteSceneConfirm</td><td>Success</td><td></td><td>208.276</td>
+</tr>
+<tr valign="top" class="">
+<td>testEditSceneNoneDelay</td><td>Success</td><td></td><td>170.126</td>
+</tr>
+<tr valign="top" class="">
+<td>testEditSceneNoneDelayAndBack</td><td>Success</td><td></td><td>179.948</td>
+</tr>
+<tr valign="top" class="">
+<td>testAEnterNull</td><td>Success</td><td></td><td>39.095</td>
+</tr>
+<tr valign="top" class="">
+<td>testEnterBuffer3</td><td>Success</td><td></td><td>33.543</td>
+</tr>
+<tr valign="top" class="">
+<td>testEnterBufferMore300</td><td>Success</td><td></td><td>34.153</td>
+</tr>
+<tr valign="top" class="">
+<td>testFeedBackHide</td><td>Success</td><td></td><td>64.518</td>
+</tr>
+<tr valign="top" class="">
+<td>testVisitor</td><td>Success</td><td></td><td>55.271</td>
+</tr>
+<tr valign="top" class="">
+<td>testMobileNumberNotExit</td><td>Success</td><td></td><td>73.849</td>
+</tr>
+<tr valign="top" class="">
+<td>testMobileNumberWrong</td><td>Success</td><td></td><td>65.459</td>
+</tr>
+<tr valign="top" class="">
+<td>testPassAsEight</td><td>Success</td><td></td><td>75.530</td>
+</tr>
+<tr valign="top" class="">
+<td>testPasswordAsIllegalChar</td><td>Success</td><td></td><td>73.907</td>
+</tr>
+<tr valign="top" class="">
+<td>testPasswordAsIllegalChar1</td><td>Success</td><td></td><td>74.917</td>
+</tr>
+<tr valign="top" class="">
+<td>testPasswordAsNoMatch</td><td>Success</td><td></td><td>75.511</td>
+</tr>
+<tr valign="top" class="">
+<td>testPasswordAsNoMatch1</td><td>Success</td><td></td><td>74.711</td>
+</tr>
+<tr valign="top" class="">
+<td>testPasswordAsNoMatch2</td><td>Success</td><td></td><td>76.492</td>
+</tr>
+<tr valign="top" class="">
+<td>testPasswordLessThan8Char</td><td>Success</td><td></td><td>75.996</td>
+</tr>
+<tr valign="top" class="">
+<td>testVerificationWrong</td><td>Success</td><td></td><td>73.072</td>
+</tr>
+<tr valign="top" class="">
+<td>testCheckGatewayCenter</td><td>Success</td><td></td><td>50.609</td>
+</tr>
+<tr valign="top" class="">
+<td>testGatewayLoginAsEmptyNum</td><td>Success</td><td></td><td>58.398</td>
+</tr>
+<tr valign="top" class="">
+<td>testGatewayLoginAsEmptyPassword</td><td>Success</td><td></td><td>70.900</td>
+</tr>
+<tr valign="top" class="">
+<td>testGatewayLoginAsNotMatch</td><td>Success</td><td></td><td>73.639</td>
+</tr>
+<tr valign="top" class="">
+<td>testGatewayLoginAsNumWrong</td><td>Success</td><td></td><td>74.768</td>
+</tr>
+<tr valign="top" class="">
+<td>testGatewayLoginAsPasswordLessThanSix</td><td>Success</td><td></td><td>71.602</td>
+</tr>
+<tr valign="top" class="">
+<td>testGatewayLoginSuccess</td><td>Success</td><td></td><td>84.511</td>
+</tr>
+<tr valign="top" class="">
+<td>testCheckHomePage</td><td>Success</td><td></td><td>56.912</td>
+</tr>
+<tr valign="top" class="">
+<td>testCheckMessageCenter</td><td>Success</td><td></td><td>59.492</td>
+</tr>
+<tr valign="top" class="">
+<td>testClickDevice</td><td>Success</td><td></td><td>58.907</td>
+</tr>
+<tr valign="top" class="">
+<td>testClickFind</td><td>Success</td><td></td><td>52.549</td>
+</tr>
+<tr valign="top" class="">
+<td>testClickScenes</td><td>Success</td><td></td><td>59.471</td>
+</tr>
+<tr valign="top" class="">
+<td>testDClickMine</td><td>Success</td><td></td><td>103.259</td>
+</tr>
+<tr valign="top" class="">
+<td>testLoginSuccess</td><td>Success</td><td></td><td>57.566</td>
+</tr>
+<tr valign="top" class="">
+<td>testPasswordNull</td><td>Success</td><td></td><td>95.912</td>
+</tr>
+<tr valign="top" class="">
+<td>testUserNameNull</td><td>Success</td><td></td><td>79.427</td>
+</tr>
+<tr valign="top" class="">
+<td>testUserNotExsit</td><td>Success</td><td></td><td>44.663</td>
+</tr>
+<tr valign="top" class="">
+<td>testWrongPassword</td><td>Success</td><td></td><td>45.423</td>
+</tr>
+<tr valign="top" class="">
+<td>testGatewayLoginClick</td><td>Success</td><td></td><td>132.658</td>
+</tr>
+<tr valign="top" class="">
+<td>testViewAlarm</td><td>Success</td><td></td><td>60.978</td>
+</tr>
+<tr valign="top" class="">
+<td>testViewDeviceAlarm</td><td>Success</td><td></td><td>42.685</td>
+</tr>
+<tr valign="top" class="">
+<td>testViewDeviceLog</td><td>Success</td><td></td><td>37.240</td>
+</tr>
+<tr valign="top" class="">
+<td>testViewLog</td><td>Success</td><td></td><td>45.879</td>
+</tr>
+<tr valign="top" class="">
+<td>testChangeNameAsNotEnter</td><td>Success</td><td></td><td>36.827</td>
+</tr>
+<tr valign="top" class="">
+<td>testChangeNameCancel</td><td>Success</td><td></td><td>50.655</td>
+</tr>
+<tr valign="top" class="">
+<td>testChangeNameLessThanTwenty</td><td>Success</td><td></td><td>43.881</td>
+</tr>
+<tr valign="top" class="">
+<td>testChangeNameMoreThanTwenty</td><td>Success</td><td></td><td>50.737</td>
+</tr>
+<tr valign="top" class="">
+<td>testAClosePushNotification</td><td>Success</td><td></td><td>43.533</td>
+</tr>
+<tr valign="top" class="">
+<td>testAOpenPushNotification</td><td>Success</td><td></td><td>49.263</td>
+</tr>
+<tr valign="top" class="">
+<td>testBCloseAlarmVoice</td><td>Success</td><td></td><td>46.038</td>
+</tr>
+<tr valign="top" class="">
+<td>testBOpenAlarmVoice</td><td>Success</td><td></td><td>45.771</td>
+</tr>
+<tr valign="top" class="">
+<td>testChangePushTime</td><td>Success</td><td></td><td>71.050</td>
+</tr>
+<tr valign="top" class="">
+<td>testChangeVoiceKind</td><td>Success</td><td></td><td>59.785</td>
+</tr>
+<tr valign="top" class="">
+<td>testChangeVoiceSpeed</td><td>Success</td><td></td><td>48.464</td>
+</tr>
+<tr valign="top" class="">
+<td>testClearCache</td><td>Success</td><td></td><td>44.228</td>
+</tr>
+<tr valign="top" class="">
+<td>testCloseAlarmVid</td><td>Success</td><td></td><td>44.605</td>
+</tr>
+<tr valign="top" class="">
+<td>testOpenAlarmVid</td><td>Success</td><td></td><td>46.224</td>
+</tr>
+<tr valign="top" class="">
+<td>testMobileNoneNum</td><td>Success</td><td></td><td>54.192</td>
+</tr>
+<tr valign="top" class="">
+<td>testMobileNumUsed</td><td>Success</td><td></td><td>39.974</td>
+</tr>
+<tr valign="top" class="">
+<td>testMobileNumWrong</td><td>Success</td><td></td><td>40.073</td>
+</tr>
+<tr valign="top" class="">
+<td>testSetServer</td><td>Success</td><td></td><td>49.118</td>
+</tr>
+<tr valign="top" class="">
+<td>testTimeOut</td><td>Success</td><td></td><td>99.247</td>
+</tr>
+<tr valign="top" class="">
+<td>testVerCodeError</td><td>Success</td><td></td><td>43.013</td>
+</tr>
+<tr valign="top" class="">
+<td>testBatchAdditionSucc</td><td>Success</td><td></td><td>133.516</td>
+</tr>
+<tr valign="top" class="">
+<td>testCSAN</td><td>Success</td><td></td><td>105.789</td>
+</tr>
+<tr valign="top" class="">
+<td>testNoneSelect</td><td>Success</td><td></td><td>112.466</td>
+</tr>
+<tr valign="top" class="">
+<td>testSceneEditA</td><td>Success</td><td></td><td>70.444</td>
+</tr>
+<tr valign="top" class="">
+<td>testSceneEditAsGL</td><td>Success</td><td></td><td>128.187</td>
+</tr>
+<tr valign="top" class="">
+<td>testSelectAllAndNot</td><td>Success</td><td></td><td>122.799</td>
+</tr>
+<tr valign="top" class="">
+<td>testSceneSortAsReset</td><td>Success</td><td></td><td>88.017</td>
+</tr>
+<tr valign="top" class="">
+<td>testSceneSortAsSuccess</td><td>Success</td><td></td><td>49.824</td>
+</tr>
+<tr valign="top" class="">
+<td>testAccountSuccess</td><td>Success</td><td></td><td>117.522</td>
+</tr>
+<tr valign="top" class="">
+<td>testBAccountUsed</td><td>Success</td><td></td><td>77.681</td>
+</tr>
+<tr valign="top" class="">
+<td>testBShareCancel</td><td>Success</td><td></td><td>46.554</td>
+</tr>
+<tr valign="top" class="">
+<td>testCShareCancelSuccess</td><td>Success</td><td></td><td>46.232</td>
+</tr>
+<tr valign="top" class="">
+<td>testDAccountFail</td><td>Success</td><td></td><td>55.803</td>
+</tr>
+<tr valign="top" class="">
+<td>testDAccountNone</td><td>Success</td><td></td><td>54.602</td>
+</tr>
+<tr valign="top" class="">
+<td>testViewShareList</td><td>Success</td><td></td><td>38.565</td>
+</tr>
+<tr valign="top" class="">
+<td>testViewShareManager</td><td>Success</td><td></td><td>39.786</td>
+</tr>
+<tr valign="top" class="">
+<td>testCheckNoticeByVisitor</td><td>Success</td><td></td><td>77.607</td>
+</tr>
+<tr valign="top" class="">
+<td>testClickBySettingsByVisitor</td><td>Success</td><td></td><td>64.503</td>
+</tr>
+<tr valign="top" class="">
+<td>testClickCustomerServiceByVisitor</td><td>Success</td><td></td><td>59.441</td>
+</tr>
+<tr valign="top" class="">
+<td>testClickDeviceByVisitor</td><td>Success</td><td></td><td>53.116</td>
+</tr>
+<tr valign="top" class="">
+<td>testClickFindByVisitor</td><td>Success</td><td></td><td>53.950</td>
+</tr>
+<tr valign="top" class="">
+<td>testClickGatewayCenterByVisitor</td><td>Success</td><td></td><td>60.849</td>
+</tr>
+<tr valign="top" class="">
+<td>testClickLoginByVisitor</td><td>Success</td><td></td><td>65.431</td>
+</tr>
+<tr valign="top" class="">
+<td>testClickMessageCenterByVisitor</td><td>Success</td><td></td><td>54.194</td>
+</tr>
+<tr valign="top" class="">
+<td>testClickMineByVisitor</td><td>Success</td><td></td><td>54.187</td>
+</tr>
+<tr valign="top" class="">
+<td>testClickMyManagerByVisitor</td><td>Success</td><td></td><td>59.759</td>
+</tr>
+<tr valign="top" class="">
+<td>testClickScenesByVisitor</td><td>Success</td><td></td><td>58.137</td>
+</tr>
+<tr valign="top" class="">
+<td>testLoginByVisitor</td><td>Success</td><td></td><td>51.870</td>
+</tr>
+<tr valign="top" class="">
+<td>testChangeAsNewPasswordLessThan6</td><td>Success</td><td></td><td>106.665</td>
+</tr>
+<tr valign="top" class="">
+<td>testChangeAsOldPasswordWrong</td><td>Success</td><td></td><td>65.488</td>
+</tr>
+<tr valign="top" class="">
+<td>testChangeNikeNameEquals15</td><td>Success</td><td></td><td>91.314</td>
+</tr>
+<tr valign="top" class="">
+<td>testChangeNikeNameLessThan15</td><td>Success</td><td></td><td>94.860</td>
+</tr>
+<tr valign="top" class="">
+<td>testChangeNikeNameMoreThan15</td><td>Success</td><td></td><td>93.108</td>
+</tr>
+<tr valign="top" class="">
+<td>testDChangeAsNewSameAsOld</td><td>Success</td><td></td><td>65.584</td>
+</tr>
+<tr valign="top" class="">
+<td>testEChangeGatewayPasswordAsGatewayLogin</td><td>Success</td><td></td><td>223.704</td>
+</tr>
+</table>
+<p></p>
+</body>
+</html>
